@@ -1,0 +1,23 @@
+
+abstract class Vehicle {
+
+    abstract void start();
+void stop() {
+        System.out.println("Vehicle stopped.");
+    }
+}
+class Car extends Vehicle {
+ 
+    void start() {
+        System.out.println("Car started.");
+    }
+}
+
+public class Abstract {
+    public static void main(String[] args) {
+     
+        Car myCar = new Car();
+        myCar.start();  
+        myCar.stop();   
+    }
+}
